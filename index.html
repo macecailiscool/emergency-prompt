@@ -5,53 +5,34 @@
     <title>EMERGENCY PROMPT</title>
 </head>
 <body>
-    <script>
-        var isMacOS = navigator.platform.toUpperCase().indexOf('MAC') >= 0;
-        if (!isMacOS) {
-            document.write('<h1>EMERGENCY PROMPT is only available on macOS.</h1>');
-        }
-    </script>
+    <h1>EMERGENCY PROMPT</h1>
 
-    <noscript>
-        <h1>EMERGENCY PROMPT requires JavaScript to be enabled.</h1>
-    </noscript>
+    <h2>Overview</h2>
+    <p>EMERGENCY PROMPT is a Bash script that provides emergency options to Mac users in case their system becomes unresponsive or unstable. The script allows the user to choose between force restarting the Dock, Finder, or the whole system. The "Force Reboot" option includes a second warning message in red text, reminding the user that all unsaved changes will be lost.</p>
 
-    <div id="content" style="display: none;">
-        <h1>EMERGENCY PROMPT</h1>
+    <h2>Features</h2>
+    <ul>
+        <li>Three emergency options: Restart Dock, Restart Finder, or Force Reboot</li>
+        <li>Second warning message for Force Reboot, in red text</li>
+        <li>Checks whether system integrity protection is disabled</li>
+        <li>Logs all actions performed in a log file with a timestamp</li>
+        <li>Includes a warning message explaining the risks associated with using the script</li>
+        <li>Requires the user to confirm that they understand the risks before proceeding</li>
+    </ul>
 
-        <h2>Overview</h2>
-        <p>EMERGENCY PROMPT is a Bash script that provides emergency options to Mac users in case their system becomes unresponsive or unstable. The script allows the user to choose between force restarting the Dock, Finder, or the whole system. The "Force Reboot" option includes a second warning message in red text, reminding the user that all unsaved changes will be lost.</p>
+    <h2>Usage</h2>
+    <ol>
+        <li>Download the script to your Mac</li>
+        <li>Open a Terminal window</li>
+        <li>Navigate to the directory where the script is located</li>
+        <li>Type <code>./emergency-prompt.sh</code> and press Enter</li>
+        <li>Follow the on-screen instructions to choose the desired action</li>
+    </ol>
 
-        <h2>Features</h2>
-        <ul>
-            <li>Three emergency options: Restart Dock, Restart Finder, or Force Reboot</li>
-            <li>Second warning message for Force Reboot, in red text</li>
-            <li>Checks whether system integrity protection is disabled</li>
-            <li>Logs all actions performed in a log file with a timestamp</li>
-            <li>Includes a warning message explaining the risks associated with using the script</li>
-            <li>Requires the user to confirm that they understand the risks before proceeding</li>
-        </ul>
+    <p>Note: This script is intended for use in emergency situations only, and may cause data loss or system instability. Use at your own risk.</p>
 
-        <h2>Usage</h2>
-        <ol>
-            <li>Download the script to your Mac</li>
-            <li>Open a Terminal window</li>
-            <li>Navigate to the directory where the script is located</li>
-            <li>Type <code>./emergency-prompt.sh</code> and press Enter</li>
-            <li>Follow the on-screen instructions to choose the desired action</li>
-        </ol>
-
-        <p>Note: This script is intended for use in emergency situations only, and may cause data loss or system instability. Use at your own risk.</p>
-
-        <h2>Download</h2>
-        <p>You can download the EMERGENCY PROMPT script from the following link:</p>
-        <a href="https://github.com/YOUR-USERNAME/YOUR-REPOSITORY/raw/main/emergency-prompt.sh" download>Download EMERGENCY PROMPT</a>
-    </div>
-
-    <script>
-        if (isMacOS) {
-            document.getElementById("content").style.display = "block";
-        }
-    </script>
+    <h2>Download</h2>
+    <p>You can download the EMERGENCY PROMPT script from the following link:</p>
+    <a href="https://github.com/YOUR-USERNAME/YOUR-REPOSITORY/raw/main/emergency-prompt.sh" download>Download EMERGENCY PROMPT</a>
 </body>
 </html>
